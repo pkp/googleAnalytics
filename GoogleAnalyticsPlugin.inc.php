@@ -27,7 +27,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin {
 		if (!Config::getVar('general', 'installed') || defined('RUNNING_UPGRADE')) return true;
 		if ($success && $this->getEnabled()) {
 			// Insert Google Analytics page tag to footer
-			HookRegistry::register('Templates::Common::Footer::PageFooter', array($this, 'insertFooter'));
+			HookRegistry::register('TemplateManager::display', array($this, 'registerScript'));
 		}
 		return $success;
 	}
@@ -108,11 +108,11 @@ class GoogleAnalyticsPlugin extends GenericPlugin {
 	}
 
 	/**
-	 * Insert Google Analytics page tag to footer
+	 * Register the Google Analytics script tag
 	 * @param $hookName string
 	 * @param $params array
 	 */
-	function insertFooter($hookName, $params) {
+	function registerScript($hookName, $params) {
 		$request = $this->getRequest();
 		$context = $request->getContext();
 		if (!$context) return false;
@@ -120,10 +120,25 @@ class GoogleAnalyticsPlugin extends GenericPlugin {
 		$googleAnalyticsSiteId = $this->getSetting($context->getId(), 'googleAnalyticsSiteId');
 		if (empty($googleAnalyticsSiteId)) return false;
 
+		$googleAnalyticsCode = "
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', '$googleAnalyticsSiteId', 'auto');
+ga('send', 'pageview');
+";
+
 		$templateMgr = TemplateManager::getManager($request);
-		$templateMgr->assign('googleAnalyticsSiteId', $googleAnalyticsSiteId);
-		$output =& $params[2];
-		$output .= $templateMgr->fetch($this->getTemplatePath() . 'pageTag.tpl');
+		$templateMgr->addJavaScript(
+			'googleanalytics',
+			$googleAnalyticsCode,
+			array(
+				'priority' => STYLE_SEQUENCE_LAST,
+				'inline'   => true,
+			)
+		);
 
 		return false;
 	}
