@@ -116,6 +116,8 @@ class GoogleAnalyticsPlugin extends GenericPlugin {
 		$request = $this->getRequest();
 		$context = $request->getContext();
 		if (!$context) return false;
+		$router = $request->getRouter();
+		if (!is_a($router, 'PKPPageRouter')) return false;
 
 		$googleAnalyticsSiteId = $this->getSetting($context->getId(), 'googleAnalyticsSiteId');
 		if (empty($googleAnalyticsSiteId)) return false;
