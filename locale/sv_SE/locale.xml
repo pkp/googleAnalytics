@@ -19,9 +19,9 @@
 
 	<!-- Google Analytics Settings Management -->
 	<message key="plugins.generic.googleAnalytics.manager.settings.description"><![CDATA[<p>När detta plugin är aktivt kan Google Analytics användas för att samla in och analysera webbplatsens trafik. Notera att detta plugin kräver att du redan har konfigurerat ett Google Analytics-konto. Se <a href="http://www.google.com/analytics/" title="Google Analytics webbplats">Google Analytics webbplats</a> för mer information.</p><p>Observera att det kan ta upp till 24 timmar innan Google Analytics har samlat in och rapporterat tillbaka statistik. Under denna period kan det hända att funktionen 'Kontrollera status' rapporterar felaktigt om den hittat den nödvändiga koden för spårning.</p>]]></message>
-	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId">Spårnings-id</message>
-	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired">Ange spårnings-id.</message>
-	<message key="plugins.generic.googleAnalytics.authorAccount">Google Analytics spårnings-id</message>
-	<message key="plugins.generic.googleAnalytics.authorAccount.description">För att spåra läsning av publicerade artiklar med hjälp av Google Analytics, ange spårnings-id här (ex. UA-xxxxxx-x).</message>
-	<message key="plugins.generic.googleAnalytics.authorAccountInvalid">Ett eller flera spårnings-id som angetts är inte giltiga.</message>
+	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId">Egendomsnummer</message>
+	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired">Ange egendomsnummer.</message>
+	<message key="plugins.generic.googleAnalytics.authorAccount">Google Analytics egendomsnummer</message>
+	<message key="plugins.generic.googleAnalytics.authorAccount.description">För att spåra läsning av publicerade artiklar med hjälp av Google Analytics, ange egendomsnummer här (ex. UA-xxxxxx-x).</message>
+	<message key="plugins.generic.googleAnalytics.authorAccountInvalid">Ett eller flera egendomsnummer som angivits är inte giltiga.</message>
 </locale>
