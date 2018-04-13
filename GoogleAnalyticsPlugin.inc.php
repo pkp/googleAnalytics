@@ -25,7 +25,6 @@ class GoogleAnalyticsPlugin extends GenericPlugin {
 		if ($success && $this->getEnabled($mainContextId)) {
 			// Insert Google Analytics page tag to footer
 			HookRegistry::register('TemplateManager::display', array($this, 'registerScript'));
-			$this->_registerTemplateResource();
 		}
 		return $success;
 	}
@@ -93,13 +92,6 @@ class GoogleAnalyticsPlugin extends GenericPlugin {
 				return new JSONMessage(true, $form->fetch($request));
 		}
 		return parent::manage($args, $request);
-	}
-
-	/**
-	 * @copydoc PKPPlugin::getTemplatePath
-	 */
-	function getTemplatePath($inCore = false) {
-		return $this->getTemplateResourceName() . ':templates/';
 	}
 
 	/**
