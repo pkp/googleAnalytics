@@ -18,7 +18,7 @@
 	<message key="plugins.generic.googleAnalytics.description"><![CDATA[Verbinden Sie OJS mit Google Analytics, der Google-Anwendung zur Nutzungsanalyse von Webseiten-Traffic. Voraussetzung ist, dass Sie bereits einen Google-Analytics-Zugang haben. Siehe <a href="http://www.google.com/analytics/" title="Google Analytics site">Google Analytics</a> für weitere Informationen.]]></message>
 
 	<!-- Google Analytics Settings Management -->
-	<message key="plugins.generic.googleAnalytics.manager.settings.description"><![CDATA[<p>Mit diesem Plug-In ist es möglich, Nutzung und Traffic für diese Zeitschrift zu erheben und zu analysieren. Bitte beachten Sie, dass Sie hierfür bereits einen Google-Analytics-Zugang haben müssen. Siehe <a href="http://www.google.com/analytics/" title="Google Analytics site">Google Analytics</a> für weitere Informationen.</p>]]></message>
+	<message key="plugins.generic.googleAnalytics.manager.settings.description"><![CDATA[<p>Mit diesem Plugin ist es möglich, Nutzung und Traffic für diese Zeitschrift zu erheben und zu analysieren. Bitte beachten Sie, dass Sie hierfür bereits einen Google-Analytics-Zugang haben müssen. Siehe <a href="http://www.google.com/analytics/" title="Google Analytics site">Google Analytics</a> für weitere Informationen.</p>]]></message>
 	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId">Account-ID</message>
 	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired">Bitte geben Sie die Account-ID ein.</message>
 	<message key="plugins.generic.googleAnalytics.authorAccount">Google Analytics Account-Nummer</message>
