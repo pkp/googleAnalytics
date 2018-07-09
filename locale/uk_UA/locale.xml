@@ -13,15 +13,15 @@
  
 <locale name="uk_UA" full_name="Українська">
 
-       <!-- Google Analytics -->
-       <message key="plugins.generic.googleAnalytics.displayName">Модуль Google Analytics</message>
-       <message key="plugins.generic.googleAnalytics.description"><![CDATA[Інтеграція OJS з Google Analytics - інструментом Google для аналізу трафіку веб-сайту. Вимагається вже налаштований обліковий запис Google Analytics. Для отримання додаткової інформації, будь ласка, див. <a href="http://www.google.com/analytics/" title="Google Analytics site">сайт Google Analytics</a>.]]></message>
+	<!-- Google Analytics -->
+	<message key="plugins.generic.googleAnalytics.displayName">Модуль Google Analytics</message>
+	<message key="plugins.generic.googleAnalytics.description"><![CDATA[Інтеграція OJS з Google Analytics - інструментом Google для аналізу трафіку веб-сайту. Вимагається вже налаштований обліковий запис Google Analytics. Для отримання додаткової інформації, будь ласка, див. <a href="http://www.google.com/analytics/" title="Google Analytics site">сайт Google Analytics</a>.]]></message>
 
-       <!-- Керування налаштуваннями Google Analytics -->
-       <message key="plugins.generic.googleAnalytics.manager.settings.description"><![CDATA[<p>Дозволяє використовувати Google Analytics для збирання та аналізу статистичних даних щодо використання цього журналу. Будь ласка, зауважте, що для використання цього модуля ви повинні мати обліковий запис у Google Analytics. Для отримання додаткової інформації, будь ласка, див. <a href="http://www.google.com/analytics/" title="Google Analytics site">сайт Google Analytics</a>.</p><p>Будь ласка, майте на увазі, що Google Analytics потребує до 24 годин, перш ніж статистика буде зібрана та доступна для перегляду. Упродовж цього періоду функція 'Перевірити статус' може надавати некоректну відповідь щодо того, чи був визначений коректний код відслідковування для цього журналу.</p>]]></message>
-       <message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId">Номер облікового запису</message>
-       <message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired">Будь ласка, введіть номер облікового запису.</message>
-       <message key="plugins.generic.googleAnalytics.authorAccount">Номер облікового запису Google Analytics</message>
-       <message key="plugins.generic.googleAnalytics.authorAccount.description">Для того, щоб відстежувати перегляди опублікованих статей за допомогою Google Analytics введіть сюди номер облікового запису (наприклад, UA-xxxxxx-x).</message>
-       <message key="plugins.generic.googleAnalytics.authorAccountInvalid">Як мінімум один із введених номерів облікових записів Google Analytics для авторів подань не є коректним.</message>
+	<!-- Керування налаштуваннями Google Analytics -->
+	<message key="plugins.generic.googleAnalytics.manager.settings.description"><![CDATA[<p>Дозволяє використовувати Google Analytics для збирання та аналізу статистичних даних щодо використання цього журналу. Будь ласка, зауважте, що для використання цього модуля ви повинні мати обліковий запис у Google Analytics. Для отримання додаткової інформації, будь ласка, див. <a href="http://www.google.com/analytics/" title="Google Analytics site">сайт Google Analytics</a>.</p><p>Будь ласка, майте на увазі, що Google Analytics потребує до 24 годин, перш ніж статистика буде зібрана та доступна для перегляду. Упродовж цього періоду функція 'Перевірити статус' може надавати некоректну відповідь щодо того, чи був визначений коректний код відслідковування для цього журналу.</p>]]></message>
+	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId">Номер облікового запису</message>
+	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired">Будь ласка, введіть номер облікового запису.</message>
+	<message key="plugins.generic.googleAnalytics.authorAccount">Номер облікового запису Google Analytics</message>
+	<message key="plugins.generic.googleAnalytics.authorAccount.description">Для того, щоб відстежувати перегляди опублікованих статей за допомогою Google Analytics введіть сюди номер облікового запису (наприклад, UA-xxxxxx-x).</message>
+	<message key="plugins.generic.googleAnalytics.authorAccountInvalid">Як мінімум один із введених номерів облікових записів Google Analytics для авторів подань не є коректним.</message>
 </locale>
