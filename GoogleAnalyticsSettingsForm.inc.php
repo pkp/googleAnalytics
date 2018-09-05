@@ -57,7 +57,6 @@ class GoogleAnalyticsSettingsForm extends Form {
 	}
 
 	/**
-	 * Fetch the form.
 	 * @copydoc Form::fetch()
 	 */
 	function fetch($request, $template = null, $display = false) {

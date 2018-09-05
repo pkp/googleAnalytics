@@ -100,7 +100,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin {
 	 * @param $params array
 	 */
 	function registerScript($hookName, $params) {
-		$request = $this->getRequest();
+		$request = Application::getRequest();
 		$context = $request->getContext();
 		if (!$context) return false;
 		$router = $request->getRouter();
