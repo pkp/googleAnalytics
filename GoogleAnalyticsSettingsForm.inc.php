@@ -73,4 +73,3 @@ class GoogleAnalyticsSettingsForm extends Form {
 	}
 }
 
-?>
