@@ -22,7 +22,7 @@
 	<div id="description">{translate key="plugins.generic.googleAnalytics.manager.settings.description"}</div>
 
 	{fbvFormArea id="webFeedSettingsFormArea"}
-		{fbvElement type="text" name="googleAnalyticsSiteId" value=$googleAnalyticsSiteId label="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId"}
+		{fbvElement type="text" id="googleAnalyticsSiteId" value=$googleAnalyticsSiteId label="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId"}
 	{/fbvFormArea}
 
 	{fbvFormButtons}
