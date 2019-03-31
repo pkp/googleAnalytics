@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale/sl_SI/locale.xml
+  *
+  * Copyright (c) 2014-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+
+<locale name="sl_SI" full_name="Slovenščina">
+	<message key="plugins.generic.googleAnalytics.displayName">Google Analytics vtičnik</message>
+	<message key="plugins.generic.googleAnalytics.description"><![CDATA[Povežite OJS z Google Analytics, Google-ovo aplikacijo za spremljanje prometa spletišča. Potrebujete že ustvarjen  Google Analytics račun. Prosimo poglejte  <a href="http://www.google.com/analytics/" title="Google Analytics site">stran Google Analytics</a> za več informacij.]]></message>
+	<message key="plugins.generic.googleAnalytics.manager.settings.description"><![CDATA[<p>S tem tičnikom lahko uporabljate Google Analytics za zbiranje in analiziranje uporabe in prometa spletišča. Za uporabo vtičnika potrebujete že ustvarjen Google Analytics račun. Prosimo poglejte  <a href="http://www.google.com/analytics/" title="Google Analytics site">stran Google Analytics</a> za več informacij.</p><p>Prosimo upoštevajte, da Google Analytics lahko potrebuje do 24 ur, preden se statistični podatki pričnejo zbirati in poročati. V tem času lahko 'Check Status' funkcija napačno poroča ali je zaznala kodo za spremljanje aktivnosti.</p>]]></message>
+	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId">Številka računa</message>
+	<message key="plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired">Prosimo vnesite številko računa.</message>
+	<message key="plugins.generic.googleAnalytics.authorAccount">Google Analytics številka računa</message>
+	<message key="plugins.generic.googleAnalytics.authorAccount.description">Za spremljanje branosti objavljenih člankov z uporabo Google Analytics tukaj vnesite številko računa (npr. UA-xxxxxx-x).</message>
+	<message key="plugins.generic.googleAnalytics.authorAccountInvalid">Ena ali več vnesenih številk Google Analytics računov za avtorje prispevka so napačne.</message>
+</locale>
