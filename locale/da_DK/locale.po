@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-11-19T11:05:05+00:00\n"
+"PO-Revision-Date: 2019-11-19T11:05:05+00:00\n"
+"Language: \n"
+
+msgid "plugins.generic.googleAnalytics.displayName"
+msgstr "Google Analytics-plug-in"
+
+msgid "plugins.generic.googleAnalytics.description"
+msgstr "Integrér OJS med Google Analytics, Google's web site trafik-analyse applikation. Kræver at du allerede har oprettet en Google Analytics konto. Se <a href=\"http://www.google.com/analytics/\" title=\"Google Analytics site\">Google Analytics site</a> for mere information."
+
+msgid "plugins.generic.googleAnalytics.manager.settings.description"
+msgstr "<p>Med denne plugin aktiveret kan Google Analytics bruges til at samle og analysere oplysninger om brugen af sitet for dette tidsskrift. Bemærk, at denne plugin kræver, at du allerede har oprettet en Google Analytics konto. Se <a href=\"http://www.google.com/analytics/\" title=\"Google Analytics site\">Google Analytics site</a> for mere information.</p><p>Bemærk, at der kan gå op til 24 timer før Google Analytics har samlet og rapporteret de statistiske data. I denne periode kan funktionen \"Check Status\" muligvis ikke nøjagtigt afrapportere om den har registreret den nødvendige sporingskode.</p>"
+
+msgid "plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId"
+msgstr "Kontonummer"
+
+msgid "plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired"
+msgstr "Indtast et kontonummer"
+
+msgid "plugins.generic.googleAnalytics.authorAccount"
+msgstr "Google Analytics-kontonummer"
+
+msgid "plugins.generic.googleAnalytics.authorAccount.description"
+msgstr "Hvis du vil spore antallet af læsere for en publiceret artikel ved hjælp af Google Analytics, skal du indtaste et kontonummer her (fx UA-xxxxxx-x)."
+
+msgid "plugins.generic.googleAnalytics.authorAccountInvalid"
+msgstr "Et eller flere af de Google Analytics-kontonumre, der er indtastet for indleveringsforfattere, er ikke gyldige."
