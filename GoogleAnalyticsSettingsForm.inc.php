@@ -66,10 +66,11 @@ class GoogleAnalyticsSettingsForm extends Form {
 	}
 
 	/**
-	 * Save settings.
+	 * @copydoc Form::execute()
 	 */
-	function execute() {
+	function execute(...$functionArgs) {
 		$this->_plugin->updateSetting($this->_journalId, 'googleAnalyticsSiteId', trim($this->getData('googleAnalyticsSiteId'), "\"\';"), 'string');
+		parent::execute(...$functionArgs);
 	}
 }
 
