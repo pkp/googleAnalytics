@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-19T11:05:07+00:00\n"
-"PO-Revision-Date: 2020-01-30 18:49+0000\n"
+"PO-Revision-Date: 2020-06-06 02:31+0000\n"
 "Last-Translator: Carla Marques <carla.marques@sdum.uminho.pt>\n"
 "Language-Team: Portuguese (Portugal) <http://translate.pkp.sfu.ca/projects/"
 "plugins/google-analytics-plugin/pt_PT/>\n"
@@ -43,7 +43,7 @@ msgid "plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdIns
 msgstr "Dentro do Google Analytics, clique em Verificar Status (Check Status) para visualizar o código de acompanhamento do portal. O número da conta é exibido dentro o código de acompanhamento : _uacct = \"###\". Indique o texto que corresponde a ###."
 
 msgid "plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired"
-msgstr "Informe o número da conta."
+msgstr "Insira o número da conta."
 
 msgid "plugins.generic.googleAnalytics.manager.settings.trackingCode"
 msgstr "Código de acompanhamento"
