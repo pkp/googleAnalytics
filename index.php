@@ -3,7 +3,7 @@
 /**
  * @defgroup plugins_generic_googleAnalytics Google Analytics Plugin
  */
- 
+
 /**
  * @file plugins/generic/googleAnalytics/index.php
  *
@@ -19,4 +19,3 @@
 require_once('GoogleAnalyticsPlugin.inc.php');
 
 return new GoogleAnalyticsPlugin();
-
