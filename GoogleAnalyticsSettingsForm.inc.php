@@ -13,7 +13,7 @@
  * @brief Form for journal managers to modify Google Analytics plugin settings
  */
 
-import('lib.pkp.classes.form.Form');
+use PKP\form\Form;
 
 class GoogleAnalyticsSettingsForm extends Form
 {
@@ -36,10 +36,10 @@ class GoogleAnalyticsSettingsForm extends Form
 
         parent::__construct($plugin->getTemplateResource('settingsForm.tpl'));
 
-        $this->addCheck(new FormValidator($this, 'googleAnalyticsSiteId', 'required', 'plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired'));
+        $this->addCheck(new \PKP\form\validation\FormValidator($this, 'googleAnalyticsSiteId', 'required', 'plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired'));
 
-        $this->addCheck(new FormValidatorPost($this));
-        $this->addCheck(new FormValidatorCSRF($this));
+        $this->addCheck(new \PKP\form\validation\FormValidatorPost($this));
+        $this->addCheck(new \PKP\form\validation\FormValidatorCSRF($this));
     }
 
     /**

@@ -13,9 +13,12 @@
  * @brief Google Analytics plugin class
  */
 
-import('lib.pkp.classes.plugins.GenericPlugin');
-
+use PKP\plugins\GenericPlugin;
 use PKP\core\JSONMessage;
+use PKP\linkAction\request\AjaxModal;
+use PKP\linkAction\LinkAction;
+
+use APP\template\TemplateManager;
 
 class GoogleAnalyticsPlugin extends GenericPlugin
 {
@@ -59,7 +62,6 @@ class GoogleAnalyticsPlugin extends GenericPlugin
     public function getActions($request, $verb)
     {
         $router = $request->getRouter();
-        import('lib.pkp.classes.linkAction.request.AjaxModal');
         return array_merge(
             $this->getEnabled() ? [
                 new LinkAction(
@@ -144,7 +146,7 @@ ga('send', 'pageview');
             'googleanalytics',
             $googleAnalyticsCode,
             [
-                'priority' => STYLE_SEQUENCE_LAST,
+                'priority' => TemplateManager::STYLE_SEQUENCE_LAST,
                 'inline' => true,
             ]
         );
