@@ -13,6 +13,7 @@
  * @brief Form for journal managers to modify Google Analytics plugin settings
  */
 
+use APP\template\TemplateManager;
 use PKP\form\Form;
 
 class GoogleAnalyticsSettingsForm extends Form
@@ -26,8 +27,8 @@ class GoogleAnalyticsSettingsForm extends Form
     /**
      * Constructor
      *
-     * @param $plugin GoogleAnalyticsPlugin
-     * @param $journalId int
+     * @param GoogleAnalyticsPlugin $plugin
+     * @param int $journalId
      */
     public function __construct($plugin, $journalId)
     {

@@ -13,12 +13,14 @@
  * @brief Google Analytics plugin class
  */
 
-use PKP\plugins\GenericPlugin;
-use PKP\core\JSONMessage;
-use PKP\linkAction\request\AjaxModal;
-use PKP\linkAction\LinkAction;
-
+use APP\core\Application;
 use APP\template\TemplateManager;
+use PKP\core\JSONMessage;
+use PKP\linkAction\LinkAction;
+use PKP\linkAction\request\AjaxModal;
+
+use PKP\plugins\GenericPlugin;
+use PKP\plugins\HookRegistry;
 
 class GoogleAnalyticsPlugin extends GenericPlugin
 {
@@ -30,7 +32,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin
     public function register($category, $path, $mainContextId = null)
     {
         $success = parent::register($category, $path, $mainContextId);
-        if (!Config::getVar('general', 'installed') || defined('RUNNING_UPGRADE')) {
+        if (Application::isUnderMaintenance()) {
             return true;
         }
         if ($success && $this->getEnabled($mainContextId)) {
@@ -86,8 +88,6 @@ class GoogleAnalyticsPlugin extends GenericPlugin
         switch ($request->getUserVar('verb')) {
             case 'settings':
                 $context = $request->getContext();
-
-                AppLocale::requireComponents(LOCALE_COMPONENT_APP_COMMON, LOCALE_COMPONENT_PKP_MANAGER);
                 $templateMgr = TemplateManager::getManager($request);
                 $templateMgr->registerPlugin('function', 'plugin_url', [$this, 'smartyPluginUrl']);
 
@@ -111,8 +111,8 @@ class GoogleAnalyticsPlugin extends GenericPlugin
     /**
      * Register the Google Analytics script tag
      *
-     * @param $hookName string
-     * @param $params array
+     * @param string $hookName
+     * @param array $params
      */
     public function registerScript($hookName, $params)
     {
