@@ -136,7 +136,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin
 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
 j.src = 'https://www.googletagmanager.com/gtag/js?id=' + i + dl; f.parentNode.insertBefore(j, f); 
 function gtag(){dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config', i); })
-(window, document, 'script', 'dataLayer', '$googleAnalyticsSiteId');";
+(window, document, 'script', 'dataLayer', '$googleAnalyticsSiteId');
 ";
 
         $templateMgr = TemplateManager::getManager($request);
