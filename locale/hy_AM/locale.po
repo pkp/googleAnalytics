@@ -1,0 +1,57 @@
+# Artashes Mirzoyan <amirzoyan@sci.am>, 2022.
+# Tigran Zargaryan <tigran@flib.sci.am>, 2022.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-04 05:31+0000\n"
+"Last-Translator: Tigran Zargaryan <tigran@flib.sci.am>\n"
+"Language-Team: Armenian <http://translate.pkp.sfu.ca/projects/plugins/"
+"google-analytics-plugin/hy_AM/>\n"
+"Language: hy_AM\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.generic.googleAnalytics.authorAccountInvalid"
+msgstr ""
+"Ներկայացման հեղինակների համար մուտքագրված Google Analytics հաշվի մեկ կամ մի "
+"քանի թվեր վավեր չեն:"
+
+msgid "plugins.generic.googleAnalytics.authorAccount.description"
+msgstr ""
+"Google Analytics-ի միջոցով հրապարակված հոդվածների ընթերցողներին հետևելու "
+"համար այստեղ մուտքագրեք հաշվի համարը (օրինակ՝ UA-xxxxxx-x):"
+
+msgid "plugins.generic.googleAnalytics.authorAccount"
+msgstr "Google Analytics հաշվի համարը"
+
+msgid "plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired"
+msgstr "Խնդրում ենք մուտքագրել հաշվեհամարը:"
+
+msgid "plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId"
+msgstr "Հաշվեհամար"
+
+msgid "plugins.generic.googleAnalytics.manager.settings.description"
+msgstr ""
+"<p>Այս փլագինով միացված Google Analytics-ը կարող է օգտագործվել վեբ կայքի "
+"օգտագործումը և երթեւեկությունը հավաքելու և վերլուծելու համար: Խնդրում ենք "
+"նկատի ունենալ, որ այս հավելվածը պահանջում է, որ դուք արդեն ստեղծել եք Google "
+"Analytics հաշիվ: Լրացուցիչ տեղեկությունների համար այցելեք <a href=\""
+"https://www.google.com/analytics/\" title=\"Google Analytics site\">Google "
+"Analytics site</a>.</p>\n"
+"<p>PԽնդրում ենք նկատի ունենալ, որ Google Analytics-ին կարող է պահանջվել "
+"մինչև 24 ժամ, մինչև վիճակագրությունը հավաքվի և ներկայացվի: Այս "
+"ժամանակահատվածում «Ստուգել կարգավիճակը» գործառույթը կարող է ճշգրիտ չհայտնել, "
+"թե արդյոք այն հայտնաբերել է հետևման անհրաժեշտ կոդը.</p>"
+
+msgid "plugins.generic.googleAnalytics.description"
+msgstr ""
+"Ինտեգրել OJS-ը Google Analytics-ի հետ՝ Google-ի վեբ կայքի տրաֆիկի "
+"վերլուծության հավելվածի հետ: Պահանջում է, որ դուք արդեն ստեղծել եք Google "
+"Analytics հաշիվ: Լրացուցիչ տեղեկությունների համար այցելեք <a href=\""
+"https://www.google.com/analytics/\" title=\"Google Analytics site\">Google "
+"Analytics կայք</a>:"
+
+msgid "plugins.generic.googleAnalytics.displayName"
+msgstr "Google Analytics հավելված"
