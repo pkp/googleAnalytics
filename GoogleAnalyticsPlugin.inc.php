@@ -20,7 +20,7 @@ use PKP\linkAction\LinkAction;
 use PKP\linkAction\request\AjaxModal;
 
 use PKP\plugins\GenericPlugin;
-use PKP\plugins\HookRegistry;
+use PKP\plugins\Hook;
 
 class GoogleAnalyticsPlugin extends GenericPlugin
 {
@@ -37,7 +37,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin
         }
         if ($success && $this->getEnabled($mainContextId)) {
             // Insert Google Analytics page tag to footer
-            HookRegistry::register('TemplateManager::display', [$this, 'registerScript']);
+            Hook::add('TemplateManager::display', [$this, 'registerScript']);
         }
         return $success;
     }
