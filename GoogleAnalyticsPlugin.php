@@ -1,24 +1,26 @@
 <?php
 
 /**
- * @file plugins/generic/googleAnalytics/GoogleAnalyticsPlugin.inc.php
+ * @file plugins/generic/googleAnalytics/GoogleAnalyticsPlugin.php
  *
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @class GoogleAnalyticsPlugin
+ *
  * @ingroup plugins_generic_googleAnalytics
  *
  * @brief Google Analytics plugin class
  */
+
+namespace APP\plugins\generic\googleAnalytics;
 
 use APP\core\Application;
 use APP\template\TemplateManager;
 use PKP\core\JSONMessage;
 use PKP\linkAction\LinkAction;
 use PKP\linkAction\request\AjaxModal;
-
 use PKP\plugins\GenericPlugin;
 use PKP\plugins\Hook;
 
@@ -91,7 +93,6 @@ class GoogleAnalyticsPlugin extends GenericPlugin
                 $templateMgr = TemplateManager::getManager($request);
                 $templateMgr->registerPlugin('function', 'plugin_url', [$this, 'smartyPluginUrl']);
 
-                $this->import('GoogleAnalyticsSettingsForm');
                 $form = new GoogleAnalyticsSettingsForm($this, $context->getId());
 
                 if ($request->getUserVar('save')) {
@@ -133,10 +134,10 @@ class GoogleAnalyticsPlugin extends GenericPlugin
 
         $googleAnalyticsCode = "
 (function (w, d, s, l, i) { w[l] = w[l] || []; var f = d.getElementsByTagName(s)[0],
-j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
-j.src = 'https://www.googletagmanager.com/gtag/js?id=' + i + dl; f.parentNode.insertBefore(j, f); 
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
+j.src = 'https://www.googletagmanager.com/gtag/js?id=' + i + dl; f.parentNode.insertBefore(j, f);
 function gtag(){dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config', i); })
-(window, document, 'script', 'dataLayer', '$googleAnalyticsSiteId');
+(window, document, 'script', 'dataLayer', '{$googleAnalyticsSiteId}');
 ";
 
         $templateMgr = TemplateManager::getManager($request);
@@ -151,4 +152,8 @@ function gtag(){dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config
 
         return false;
     }
+}
+
+if (!PKP_STRICT_MODE) {
+    class_alias('\APP\plugins\generic\googleAnalytics\GoogleAnalyticsPlugin', '\GoogleAnalyticsPlugin');
 }
