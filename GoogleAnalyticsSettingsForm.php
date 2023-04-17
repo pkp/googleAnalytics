@@ -1,17 +1,20 @@
 <?php
 
 /**
- * @file plugins/generic/googleAnalytics/GoogleAnalyticsSettingsForm.inc.php
+ * @file plugins/generic/googleAnalytics/GoogleAnalyticsSettingsForm.php
  *
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @class GoogleAnalyticsSettingsForm
+ *
  * @ingroup plugins_generic_googleAnalytics
  *
  * @brief Form for journal managers to modify Google Analytics plugin settings
  */
+
+namespace APP\plugins\generic\googleAnalytics;
 
 use APP\template\TemplateManager;
 use PKP\form\Form;
@@ -81,4 +84,8 @@ class GoogleAnalyticsSettingsForm extends Form
         $this->_plugin->updateSetting($this->_journalId, 'googleAnalyticsSiteId', trim($this->getData('googleAnalyticsSiteId'), "\"\';"), 'string');
         parent::execute(...$functionArgs);
     }
+}
+
+if (!PKP_STRICT_MODE) {
+    class_alias('\APP\plugins\generic\googleAnalytics\GoogleAnalyticsSettingsForm', '\GoogleAnalyticsSettingsForm');
 }
