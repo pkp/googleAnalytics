@@ -23,6 +23,7 @@ use PKP\linkAction\LinkAction;
 use PKP\linkAction\request\AjaxModal;
 use PKP\plugins\GenericPlugin;
 use PKP\plugins\Hook;
+use PKP\core\PKPPageRouter;
 
 class GoogleAnalyticsPlugin extends GenericPlugin
 {
@@ -123,7 +124,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin
             return false;
         }
         $router = $request->getRouter();
-        if (!is_a($router, 'PKPPageRouter')) {
+        if (!$router instanceof PKPPageRouter) {
             return false;
         }
 
