@@ -40,7 +40,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin
         }
         if ($success && $this->getEnabled($mainContextId)) {
             // Insert Google Analytics page tag to footer
-            Hook::add('TemplateManager::display', [$this, 'registerScript']);
+            Hook::add('TemplateManager::display', $this->registerScript(...));
         }
         return $success;
     }
@@ -92,7 +92,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin
             case 'settings':
                 $context = $request->getContext();
                 $templateMgr = TemplateManager::getManager($request);
-                $templateMgr->registerPlugin('function', 'plugin_url', [$this, 'smartyPluginUrl']);
+                $templateMgr->registerPlugin('function', 'plugin_url', $this->smartyPluginUrl(...));
 
                 $form = new GoogleAnalyticsSettingsForm($this, $context->getId());
 
