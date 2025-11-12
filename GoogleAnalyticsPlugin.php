@@ -154,7 +154,3 @@ function gtag(){dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config
         return false;
     }
 }
-
-if (!PKP_STRICT_MODE) {
-    class_alias('\APP\plugins\generic\googleAnalytics\GoogleAnalyticsPlugin', '\GoogleAnalyticsPlugin');
-}
