@@ -85,7 +85,3 @@ class GoogleAnalyticsSettingsForm extends Form
         parent::execute(...$functionArgs);
     }
 }
-
-if (!PKP_STRICT_MODE) {
-    class_alias('\APP\plugins\generic\googleAnalytics\GoogleAnalyticsSettingsForm', '\GoogleAnalyticsSettingsForm');
-}
